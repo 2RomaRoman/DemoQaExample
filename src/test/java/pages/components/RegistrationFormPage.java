@@ -18,10 +18,10 @@ public class RegistrationFormPage {
     CalenderComponent calenderComponent = new CalenderComponent();
     ResultsTableComponent resultsTableComponent = new ResultsTableComponent();
 
-    SelenideElement firstname = $("[id=firstName"),
-                    lastname = $("[id=lastName"),
-                    number = $("[id=userNumber"),
-                    email = $("[id=userEmail"),
+    SelenideElement firstname = $("[id=firstName]"),
+                    lastname = $("[id=lastName]"),
+                    number = $("[id=userNumber]"),
+                    email = $("[id=userEmail]"),
                     address = $("#currentAddress"),
                     subject = $("#subjectsInput"),
                     gender = $("#genterWrapper"),
