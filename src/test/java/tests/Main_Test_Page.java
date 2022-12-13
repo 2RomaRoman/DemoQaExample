@@ -2,6 +2,8 @@ package tests;
 
 import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.*;
+
+
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
@@ -70,7 +72,6 @@ public class Main_Test_Page extends TestBase {
                             .checkResult("Subjects", subject)
                             .checkResult("Address","address")
                             .checkResult("State and City", state + " " + city);
-
         $("#closeLargeModal").click();
         $("[id=firstName").shouldBe(visible);
     }
